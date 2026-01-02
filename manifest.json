@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Startup Info Finder",
+  "description": "Find founded year, HQ, and funding for startups from their website.",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": ["http://localhost:3000/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Get startup info"
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Startup Info</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="popup-root">
+      <h1>Startup Info</h1>
+
+      <!-- Status text -->
+      <div id="status" class="status-row">
+        Click “Fetch info” to get details for this tab’s startup.
+      </div>
+
+      <!-- Main info card -->
+      <section class="card">
+        <!-- Header row: company + domain + stage badge -->
+        <div class="card-header">
+          <div class="card-header-left">
+            <div class="company-line">
+              <span id="companyName" class="company-name">—</span>
+            </div>
+            <div class="domain-line">
+              <span id="domain" class="domain-pill">—</span>
+            </div>
+          </div>
+          <span id="fundingBadge" class="badge badge-muted">Stage: —</span>
+        </div>
+
+        <!-- Core detail rows -->
+        <div class="card-body">
+          <p class="info-row">
+            <strong>Founded</strong>
+            <span id="foundedYear">—</span>
+          </p>
+          <p class="info-row">
+            <strong>HQ</strong>
+            <span id="hqLocation">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Total Funding</strong>
+            <span id="fundingAmount">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Funding Stage</strong>
+            <span id="fundingStage">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Investors</strong>
+            <span id="investors">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Accelerators / Programs</strong>
+            <span id="acceleratorsOrPrograms">—</span>
+          </p>
+
+          <hr class="divider" />
+
+          <!-- Technology POV -->
+          <h2 class="section-title">Technology POV</h2>
+          <p class="info-row">
+            <strong>Core Technology</strong>
+            <span id="coreTechnology">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Differentiation</strong>
+            <span id="technicalDifferentiation">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Patents / Proprietary IP</strong>
+            <span id="patentsOrProprietaryIP">—</span>
+          </p>
+
+          <hr class="divider" />
+
+          <!-- Founder POV -->
+          <h2 class="section-title">Founder POV</h2>
+          <p class="info-row">
+            <strong>Founder Background</strong>
+            <span id="founderBackground">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Domain Experience</strong>
+            <span id="priorDomainExperience">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Exits / Notable Companies</strong>
+            <span id="previousExitsOrNotableCompanies">—</span>
+          </p>
+
+          <hr class="divider" />
+
+          <!-- Traction & Credibility -->
+          <h2 class="section-title">Traction & Credibility</h2>
+          <p class="info-row">
+            <strong>Enterprise Clients</strong>
+            <span id="currentEnterpriseClients">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Partnerships</strong>
+            <span id="industryPartnerships">—</span>
+          </p>
+
+          <hr class="divider" />
+
+          <!-- Commercial Readiness -->
+          <h2 class="section-title">Commercial Readiness</h2>
+          <p class="info-row">
+            <strong>Stage</strong>
+            <span id="commercializationStage">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Enterprise Availability</strong>
+            <span id="enterpriseAvailability">—</span>
+          </p>
+
+          <hr class="divider" />
+
+          <!-- Security & Compliance -->
+          <h2 class="section-title">Security & Compliance</h2>
+          <p class="info-row">
+            <strong>Security Protocols</strong>
+            <span id="securityProtocols">—</span>
+          </p>
+          <p class="info-row">
+            <strong>Compliance Certifications</strong>
+            <span id="complianceCertifications">—</span>
+          </p>
+
+          <hr class="divider" />
+
+          <!-- Source -->
+          <p class="info-row">
+            <strong>Source</strong>
+            <span id="source">—</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <div class="button-row">
+        <button id="fetchBtn" class="btn primary">Fetch info</button>
+        <button id="copyBtn" class="btn ghost" disabled>Copy JSON</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
